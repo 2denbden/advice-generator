@@ -1,0 +1,89 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202733;
+    padding: 1em;
+}
+
+.card {
+    width: 100%;
+    max-width: 540px;
+    position: relative;
+    background-color: #313A48;
+    padding: 2.5em;
+    border-radius: 10px;
+}
+
+.advice-number {
+    font-size: .95rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #53ffaa;
+}
+
+.advice {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    color: #cee3e9;
+}
+
+.line-divider-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #4F5D74;
+    margin: 50px 0;
+}
+
+.line-divider {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #313A48;
+    position: absolute;
+}
+
+.dice-container {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dice {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #53ffaa;
+    border-radius: 50%;
+    margin-top: 7px;
+    position: absolute;
+    transition: box-shadow 150ms ease-out;
+}
+
+.dice img, 
+.line-divider img {
+    width: 28px;
+}
+
+.dice:hover {
+    box-shadow: 0px 0px 40px #53ffaa;
+}
